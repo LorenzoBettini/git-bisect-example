@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Simple unit test for simple App.
  */
 public class AppTest {
 	private App app;
