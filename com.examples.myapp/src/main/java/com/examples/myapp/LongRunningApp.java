@@ -9,6 +9,6 @@ public class LongRunningApp {
 	 * @return
 	 */
 	public String myLongRunningMethod() {
-		return "Hello World";
+		return "Hey World";
 	}
 }
