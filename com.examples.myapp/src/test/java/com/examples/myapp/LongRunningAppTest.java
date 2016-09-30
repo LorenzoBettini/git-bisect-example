@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * This tests long running app.
  */
 public class LongRunningAppTest {
 	private LongRunningApp app;
