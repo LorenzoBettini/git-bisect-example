@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <skip.longrunning.test>true</skip.longrunning.test>
   </properties>
 
   <dependencies>
@@ -22,4 +23,40 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.12.4</version>
+        <executions>
+          <execution>
+            <id>default-test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+            <configuration>
+              <excludes>
+                <exclude>**/*LongRunning*Test.java</exclude>
+              </excludes>
+            </configuration>
+          </execution>
+          <execution>
+            <id>longrunning-test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+            <configuration>
+              <skip>${skip.longrunning.test}</skip>
+              <includes>
+                <include>**/*LongRunning*Test.java</include>
+              </includes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
