@@ -7,6 +7,8 @@ import org.junit.Test;
 
 /**
  * This tests long running app.
+ * 
+ * Assume that this test takes some time to run.
  */
 public class LongRunningAppTest {
 	private LongRunningApp app;
