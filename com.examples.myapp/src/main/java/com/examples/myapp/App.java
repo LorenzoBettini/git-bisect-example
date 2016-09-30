@@ -1,8 +1,7 @@
 package com.examples.myapp;
 
 /**
- * Hello world!
- *
+ * Simple app for demonstration
  */
 public class App {
 	public String myMethod() {
