@@ -12,6 +12,7 @@ import org.junit.Test;
  * For this reason we don't run that on every commit.
  * 
  * You can enable that by passing -Dskip.longrunning.test=false
+ * when running Maven.
  */
 public class LongRunningAppTest {
 	private LongRunningApp app;
